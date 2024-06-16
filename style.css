@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    display: inline-block;
+    padding: auto;
+    display: grid;
+    height: 80vh;
+    width: 70vw;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    row-gap: 50px;
+    column-gap: 50px;
+    transform: translateY(75px);
+    
+}
+.block{
+    background-color: rgba(0, 38, 128, 0.715);
+    grid: 1/1;
+    /* height: 50px;
+    width: 50px; */
+    z-index: -100;
+    border-radius: 10px;
+}
+.item{
+    color: white;
+    background-color: rgba(0, 255, 255, 0.358);
+    height: 100%;
+    width: 100%;
+    /* grid-auto-flow: dense; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    /* border: 1px solid rgb(33, 32, 32); */
+    transition: 0.2s;
+}
+.item1:hover{
+    transform: scaleX(1.25);
+    cursor: pointer;
+}
+.item2:hover{
+    transform: scaleY(1.25);
+    cursor: pointer;
+}
+.item3:hover{
+    transform: scale(1.25);
+    cursor: pointer;
+}
+.item4:hover{
+    transform: translateX(15px);
+    cursor: pointer;
+}
+.item5:hover{
+    transform: translateY(15px);
+    cursor: pointer;
+}
+.item6:hover{
+    transform: translate(15px, 15px);;
+    cursor: pointer;
+}
+.item7:hover{
+    transform: matrix(1, -0.3, 0, 1, 0, 0);
+    cursor: pointer;
+}
+.item8:hover{
+    transform: matrix3d( 
+                0.6, 0.1, 0.7, 0, 
+                -0.5, 0.8, 0.1, 0, 
+                -0.6, -0.5, 0.5, 0, 
+                0, 0, 0, 1 
+            );
+    cursor: pointer;
+}
+.item9:hover{
+    transform: skew(20deg);
+    cursor: pointer;
+}
+.item10:hover{
+    transform: skewX(20deg);
+    cursor: pointer;
+}
+.item11:hover{
+    transform: skewY(20deg);
+    cursor: pointer;
+}
+.item12:hover{
+    transform: rotate(20deg);
+    cursor: pointer;
+}
+.item13:hover{
+    transform: rotateX(40deg);
+    cursor: pointer;
+}
+.item14:hover{
+    transform: rotateY(40deg);
+    cursor: pointer;
+}
+.item15:hover{
+    transform: translate3d(10px, 0, 0px);;
+    cursor: pointer;
+}
+.item16:hover{
+    transform: translateZ(10px);
+    cursor: pointer;
+}
